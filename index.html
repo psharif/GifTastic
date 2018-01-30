@@ -2,21 +2,41 @@
 <html>
 <head>
 	<title>Pedram Sharif GifTastic Homework App</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--link for cdn of semantic UI css library --> 
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
 	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	<!-- Div for buttons --> 
-	<div id="button-area"></div>
+	<div class="ui container">
 
-	<form id="form-area">
-		<label for="input">Add A Button To Search For Gifs</label>
-		<input type="text" id="input"><br>
-		<button id="submit-button">Submit</button>
-	</form>
+		<img id="title-logo" src="assets/images/logo.png">
+		<!-- Div for buttons --> 
+		<div class="other-stuff-container">
+			
+			<form id="form-area" class="ui form">
+				<div class="field">
+					<h2>Type Something and hit submit to create a button.</h2>
+					<input type="text" id="input"><!--<br><br> -->
+					<button class="ui inverted green button" id="submit-button">Submit</button>
+				</div>
+			</form>
+			<br><br>
+			
+			<h1>Click the button to Get Gifs:</h1>
+			<div id="button-area"></div>
+			<br><br>
+			<h2>Click a Gif to See it move. Click again to stop it.</h2>
 
-	<!-- Div for the Gifs -->
-	<div id="gifs"></div>
+		</div>
+		<br><br>
+		<!-- Div for the Gifs -->
+		<div class="ui grid">
+			 <div id="gifs"></div>
+		</div>
+
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
